@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#formularios {
+    display: flex;
+    flex-direction: column;
+}
+
+#formularios input, button {
+    margin: 5px;
+    height: 25px;
+    padding: 0px 5px;
+    outline: none;
+}
+
+#formularios button {
+    border: none;
+    background-color: rgba(0, 128, 0, 0.557);
+    color: #fff;
+    font-weight: bold;
+}
+
+#formularios button:hover {
+    background-color: rgba(0, 128, 0, 0.694);
+}
+
+.success-msg {
+    display: none;
+    background-color: rgba(0, 128, 0, 0.694);
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.error-msg {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.804);
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+}
