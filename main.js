@@ -1,28 +1,35 @@
-var input_a = parseFloat(document.querySelector('.a'))
-var input_b = parseFloat(document.querySelector('.b'))
+var input_a = parseFloat(document.querySelector('.a').value)
+var input_b = parseFloat(document.querySelector('.b').value)
 
 function maior() {
-    parseFloat(document.querySelector('.a'))
-    parseFloat(document.querySelector('.b'))
-    if (document.querySelector('.b').value > document.querySelector('.a').value) {
+    var input_a = parseFloat(document.querySelector('.a').value)
+    var input_b = parseFloat(document.querySelector('.b').value)
+
+    if (input_b > input_a) {
+        document.querySelector('.submit').style = 'background-color: rgba(0, 128, 0, 0.694);'
         console.log('B maior que A!')
-    } else if (document.querySelector('.b').value == document.querySelector('.a').value) {
+    } else if (input_b == input_a) {
+        document.querySelector('.submit').style = 'background-color: rgba(0, 128, 0, 0.557);'
         console.log('B é igual á A!')
     } else {
+        document.querySelector('.submit').style = 'background-color: rgba(0, 128, 0, 0.557);'
         console.log('B é menor que A!')
     }
-    console.log(`input_a valor = ${document.querySelector('.a').value}`)
-    console.log(`input_b valor = ${document.querySelector('.b').value}`)
+    console.log(`input_a valor = ${input_a}`)
+    console.log(`input_b valor = ${input_b}`)
 }
 
 addEventListener('input', maior)
 addEventListener('submit', function(e) {
     console.log('Forumlário enviado!')
     e.preventDefault()
-    if (document.querySelector('.b').value > document.querySelector('.a').value) {
+    var input_a = parseFloat(document.querySelector('.a').value)
+    var input_b = parseFloat(document.querySelector('.b').value)
+
+    if ((input_b) > (input_a)) {
         document.querySelector('.success-msg').style.display = 'block'
         document.querySelector('.error-msg').style.display = ''
-    } else if (document.querySelector('.b').value == document.querySelector('.a').value) {
+    } else if (input_b == input_a) {
         document.querySelector('.error-msg').style.display = 'block'
         document.querySelector('.success-msg').style.display = ''
     } else {
