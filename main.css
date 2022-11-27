@@ -1,0 +1,123 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header h1 {
+    font-size: 40px;
+    color: green;
+    border: 5px solid rgb(233, 233, 0);
+    border-radius: 16px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+header, form {
+    display: flex;
+    justify-content: center;
+}
+
+form input,
+form button {
+    margin: 4px;
+    font-size: 14px;
+    padding: 6px;
+    outline: none;
+}
+
+form button {
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.lista ul {
+    padding: 0;
+}
+
+.lista ul button {
+    width: 400px;
+    background-color: lightblue;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: 1px solid rgb(161, 213, 230);
+    border-radius: 20px;
+}
+
+.lista ul button:hover {
+    background-color: rgb(150, 207, 226);
+}
+
+.lista ul button:active {
+    background-color: lightblue;
+}
+
+.abrir-fechar-limpar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abrir-fechar-limpar button {
+    width: 100px;
+    padding: 4px;
+    margin: 10px 0px 8px 8px;
+}
+
+.abrir {
+    background-color: rgba(0, 128, 0, 0.846);
+    border: none;
+}
+
+.abrir:hover {
+    background-color: green;
+}
+
+.abrir:active {
+    background-color: rgba(0, 128, 0, 0.846);
+}
+
+.fechar {
+    background-color: rgba(255, 0, 0, 0.768);
+    border: none;
+}
+
+.fechar:hover {
+    background-color: red;
+}
+
+.fechar:active {
+    background-color: rgba(255, 0, 0, 0.768);
+}
+
+.limpar {
+    background-color: rgb(175, 175, 175);
+    border: none;
+}
+
+.limpar:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+.limpar:active {
+    background-color: rgb(175, 175, 175);
+}
+
+.linha {
+    padding: none;
+    border: 1px solid gray;;
+    margin: none;
+    width: 400px;
+}
