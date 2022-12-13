@@ -1,0 +1,84 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 166, 0, 0.89);
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+    padding: 4px 0px;
+    margin: 12px 0px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 6px solid rgba(0, 128, 0, 0.598);
+    border-radius: 12px;
+}
+
+form input {
+    padding: 8px 4px;
+    margin-top: 4px;
+    font-size: 15px;
+    width: 200px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.529);
+}
+
+form input::placeholder {
+    color: lightgray;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botoes button {
+    padding: 8px;
+    margin: 0 4px;
+    width: 120px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.enviar {
+    background-color: rgba(0, 128, 0, 0.801);
+}
+
+.enviar:hover {
+    background-color: green;
+}
+
+.enviar:active {
+    background-color: rgba(0, 128, 0, 0.801);
+}
+
+.resetar {
+    background-color: rgba(0, 0, 255, 0.759);
+}
+
+.resetar:hover {
+    background-color: blue;
+}
+
+.resetar:active {
+    background-color: rgba(0, 0, 255, 0.759);
+}
